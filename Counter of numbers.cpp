@@ -3,7 +3,7 @@
 
 class Counternum {
 private:
-    int sum;
+    size_t sum;
     size_t count;
 
 public:
@@ -15,7 +15,7 @@ public:
             ++count;
         }
     }
-    int get_sum() const { return sum; }
+    size_t get_sum() const { return sum; }
     size_t get_count() const { return count; }
 };
 
