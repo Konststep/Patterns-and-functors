@@ -1,13 +1,13 @@
 #include <iostream>
 #include <vector>
 
-class CounterDivisibleByThree {
+class Counternum {
 private:
     int sum;
     size_t count;
 
 public:
-    CounterDivisibleByThree() : sum(0), count(0) {}
+    Counternum() : sum(0), count(0) {}
 
     void operator()(int value) {
         if (value % 3 == 0) {
@@ -21,7 +21,7 @@ public:
 
 int main() {
     std::vector<int> numbers = { 4, 1, 3, 6, 25, 54 };
-    CounterDivisibleByThree counter;
+    Counternum counter;
     std::cout << "[IN]: ";
 
     for (int n : numbers) {
